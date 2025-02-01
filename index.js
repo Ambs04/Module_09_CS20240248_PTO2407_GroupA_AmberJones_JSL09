@@ -105,7 +105,7 @@ navigator.geolocation.getCurrentPosition((position) => {
       let urlIcon = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
       //print the icon/temp/location to DOM
       document.getElementById("weather").innerHTML = `
-      <img src=${urlIcon}/>
+      <img src=${urlIcon} />
       <p>${data.main.temp} deg</p>
        <p>${data.name}</p>
 
