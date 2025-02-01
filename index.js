@@ -67,4 +67,6 @@ fetch("https://api.coingecko.com/api/v3/coins/ethereum", { method: "GET" })
 function currentTime() {
   //retrieve current date and time
   const date = new Date();
+  // declare variable for period
+  let period = "";
 }
