@@ -17,10 +17,10 @@ fetch(
     document.getElementById(
       "author"
     ).textContent = `Image By: ${data.user.name}`;
-  });
-
-  //set a promise-rejection handler
-  .catch(err => {
-    //set a defaullt image if the promis eis rejected
-    document.body.style.backgroundImage = `url('https://images.unsplash.com/photo-1516718674638-5dd513524b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxNDI0NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Mzg0MTY1MTJ8&ixlib=rb-4.0.3&q=80&w=1080')`
+    //set a promise-rejection handler
   })
+
+  .catch((err) => {
+    //set a defaullt image if the promis eis rejected
+    document.body.style.backgroundImage = `url('https://images.unsplash.com/photo-1516718674638-5dd513524b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxNDI0NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Mzg0MTY1MTJ8&ixlib=rb-4.0.3&q=80&w=1080')`;
+  });
