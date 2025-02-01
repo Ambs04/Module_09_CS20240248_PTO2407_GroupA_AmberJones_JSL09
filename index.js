@@ -23,7 +23,7 @@ fetch(
   })
 
   .catch((err) => {
-    //set a defaullt image if the promis eis rejected
+    //set a defaullt image if the promise is rejected
     document.body.style.backgroundImage = `url('https://images.unsplash.com/photo-1516718674638-5dd513524b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxNDI0NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Mzg0MTY1MTJ8&ixlib=rb-4.0.3&q=80&w=1080')`;
   });
 
@@ -35,7 +35,7 @@ fetch("https://api.coingecko.com/api/v3/coins/ethereum", { method: "GET" })
   .then((res) => {
     //if statement to check status of request/process
     if (!res.ok) {
-      throw Error("Something went wrong");
+      throw Error("Something went wrong 😞");
     }
     return res.json();
   })
@@ -55,4 +55,6 @@ fetch("https://api.coingecko.com/api/v3/coins/ethereum", { method: "GET" })
     <p>R ${data.market_data.high_24h.zar}</p>
     <p>R ${data.market_data.low_24h.zar}</p>
     `;
-  });
+  })
+
+  .catch((err) => console.log(err));
