@@ -103,5 +103,12 @@ navigator.geolocation.getCurrentPosition((position) => {
       //console.log(data)
       //declare variable to hold weather icon url with dynamic access
       let urlIcon = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+      //print the icon/temp/location to DOM
+      document.getElementById("weather").innerHTML = `
+      <img src=${urlIcon}/>
+      <p>${data.main.temp} deg</p>
+       <p>${data.name}</p>
+
+      `;
     });
 });
