@@ -87,4 +87,9 @@ setInterval(currentTime, 1000);
 
 //get location to set up the weather section
 //use geolocation API
-navigator.geolocation.getCurrentPosition((position) => {});
+navigator.geolocation.getCurrentPosition((position) => {
+  //use fetch in position function to retriev API data
+  fetch(
+    `https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric`
+  );
+});
