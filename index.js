@@ -69,4 +69,10 @@ function currentTime() {
   const date = new Date();
   // declare variable for period
   let period = "";
+  // add if statement to determine the period for the current time
+  if (date >= 12) {
+    period = "PM";
+  } else if (date < 12) {
+    period = "AM";
+  }
 }
