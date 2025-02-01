@@ -32,4 +32,9 @@ fetch(
 //fetch data from the coingecko API
 fetch("https://api.coingecko.com/api/v3/coins/ethereum", { method: "GET" })
   .then((res) => res.json())
-  .then((data) => console.log(data));
+  .then((data) => {
+    //console.log(data)
+    //get crypto name and image and add it to element in DOM
+    document.getElementById("crypto-top").innerHTML =
+      "<img src=${data.image.small}/> <span>${data.name}</span>";
+  });
