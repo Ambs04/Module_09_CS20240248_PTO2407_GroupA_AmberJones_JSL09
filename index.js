@@ -9,7 +9,7 @@ fetch(
   .then((data) => {
     //console.log(data)
     //link picture to DOM body
-    document.style.backgroundImage =
+    document.body.style.backgroundImage =
       //target url and picture size
       `url(${data.urls.regular})`;
     //get photographer name and link to DOM
