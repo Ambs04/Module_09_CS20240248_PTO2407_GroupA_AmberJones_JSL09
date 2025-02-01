@@ -75,9 +75,9 @@ function currentTime() {
   } else if (date < 12) {
     period = "AM";
   }
-  // print time and period to the DOM element
+  // print time and period to the DOM element and use method to extract localised time
   document.getElementById("time").textContent = date.toLocaleTimeString(
     "en-ZA",
-    { timeStyle: "short" }
+    { timeStyle: "short" } + " " + period
   );
 }
