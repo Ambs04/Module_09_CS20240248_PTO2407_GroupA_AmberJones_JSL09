@@ -114,3 +114,8 @@ navigator.geolocation.getCurrentPosition((position) => {
 });
 
 //SECTION 5 - PERSONAL TOUCHES
+
+document.getElementById("to-do-btn").addEventListener("click", function () {
+  //open link in new tab when button is clicked
+  window.open('https://www.monday.com","_blank');
+});
