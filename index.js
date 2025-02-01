@@ -91,11 +91,13 @@ navigator.geolocation.getCurrentPosition((position) => {
   //use fetch in position function to retriev API data
   fetch(
     `https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric`
-  ).then((res) => {
-    //create promise rejection error message
-    if (!res.ok) {
-      throw Error("Weather data is not available.");
-    }
-    return res.json();
-  });
+  )
+    .then((res) => {
+      //create promise rejection error message
+      if (!res.ok) {
+        throw Error("Weather data is not available.");
+      }
+      return res.json();
+    })
+    .then((data) => console.log(data));
 });
