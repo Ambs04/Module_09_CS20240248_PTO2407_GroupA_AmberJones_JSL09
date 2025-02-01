@@ -12,4 +12,9 @@ fetch(
     document.style.backgroundImage =
       //target url and picture size
       `url(${data.urls.regular})`;
+    //get photographer name and link to DOM
+    //locate in the data
+    document.getElementById(
+      "author"
+    ).textContent = `Image By: ${data.user.name}`;
   });
