@@ -38,4 +38,17 @@ fetch("https://api.coingecko.com/api/v3/coins/ethereum", { method: "GET" })
     document.getElementById(
       "crypto-top"
     ).innerHTML = `<img src=${data.image.small}/> <span>${data.name}</span>`;
+    //access and add prices to the crypto section
+    document.getElementById("crypto").innerHTML +=
+      //normal price
+      // 24hr high price
+      // 24hr low price
+
+      `
+    <p>${data.market_data.current_price.zar}</p>
+    <p>${data.market_data.high_24h.zar}</p>
+    <p>${data.market_data.low_24h.zar}</p>
+
+    
+    `;
   });
