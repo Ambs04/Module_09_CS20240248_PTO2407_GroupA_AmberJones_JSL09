@@ -99,5 +99,9 @@ navigator.geolocation.getCurrentPosition((position) => {
       }
       return res.json();
     })
-    .then((data) => console.log(data));
+    .then((data) => {
+      //console.log(data)
+      //declare variable to hold weather icon url with dynamic access
+      let urlIcon = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    });
 });
