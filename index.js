@@ -108,7 +108,7 @@ navigator.geolocation.getCurrentPosition((position) => {
       <img src=${urlIcon} />
       <p>${data.main.temp} deg</p>
        <p>${data.name}</p>
-
       `;
-    });
+    })
+    .catch((err) => console.log(err));
 });
