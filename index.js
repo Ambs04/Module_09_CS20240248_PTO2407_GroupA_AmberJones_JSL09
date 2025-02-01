@@ -82,4 +82,5 @@ function currentTime() {
   );
 }
 
+//use setInterval to update time in currentTime function, every second
 setInterval(currentTime, 1000);
