@@ -82,3 +82,9 @@ function currentTime() {
 
 //use setInterval to update time in currentTime function, every second
 setInterval(currentTime, 1000);
+
+//SECTION 4 -WEATHER SECTION
+
+//get location to set up the weather section
+//use geolocation API
+navigator.geolocation.getCurrentPosition((position) => {});
