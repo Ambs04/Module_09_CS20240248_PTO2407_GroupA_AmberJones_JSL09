@@ -76,10 +76,8 @@ function currentTime() {
     period = "AM";
   }
   // print time and period to the DOM element and use method to extract localised time
-  document.getElementById("time").textContent = date.toLocaleTimeString(
-    "en-ZA",
-    { timeStyle: "short" } + " " + period
-  );
+  document.getElementById("time").textContent =
+    date.toLocaleTimeString("en-ZA", { timeStyle: "short" }) + " " + period;
 }
 
 //use setInterval to update time in currentTime function, every second
