@@ -81,3 +81,5 @@ function currentTime() {
     { timeStyle: "short" } + " " + period
   );
 }
+
+setInterval(currentTime, 1000);
