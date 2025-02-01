@@ -31,7 +31,14 @@ fetch(
 
 //fetch data from the coingecko API
 fetch("https://api.coingecko.com/api/v3/coins/ethereum", { method: "GET" })
-  .then((res) => res.json())
+  // add throw function to stop code execution and execute an error message
+  .then((res) => {
+    //if statement to check status of request/process
+    if (!res.ok) {
+      throw Error("Something went wrong");
+    }
+    return res.json();
+  })
   .then((data) => {
     //console.log(data)
     //get crypto name and image and add it to element in DOM
@@ -43,12 +50,9 @@ fetch("https://api.coingecko.com/api/v3/coins/ethereum", { method: "GET" })
       //normal price
       // 24hr high price
       // 24hr low price
-
       `
     <p>R ${data.market_data.current_price.zar}</p>
     <p>R ${data.market_data.high_24h.zar}</p>
     <p>R ${data.market_data.low_24h.zar}</p>
-
-    
     `;
   });
