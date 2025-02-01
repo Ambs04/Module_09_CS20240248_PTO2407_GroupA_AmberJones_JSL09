@@ -112,3 +112,5 @@ navigator.geolocation.getCurrentPosition((position) => {
     })
     .catch((err) => console.log(err));
 });
+
+//SECTION 5 - PERSONAL TOUCHES
