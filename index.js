@@ -64,4 +64,7 @@ fetch("https://api.coingecko.com/api/v3/coins/ethereum", { method: "GET" })
 
 //Add time
 // create function to retrieve the current time and also add a period [AM/PM]
-function currentTime() {}
+function currentTime() {
+  //retrieve current date and time
+  const date = new Date();
+}
