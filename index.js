@@ -57,4 +57,11 @@ fetch("https://api.coingecko.com/api/v3/coins/ethereum", { method: "GET" })
     `;
   })
 
+  //create catch to display the error message if there is an error in the promise
   .catch((err) => console.log(err));
+
+//SECTION 3 - TIME
+
+//Add time
+// create function to retrieve the current time and also add a period [AM/PM]
+function currentTime() {}
