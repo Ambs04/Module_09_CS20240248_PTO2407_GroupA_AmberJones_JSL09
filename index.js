@@ -107,7 +107,7 @@ navigator.geolocation.getCurrentPosition((position) => {
       document.getElementById("weather").innerHTML = `
       <img src=${urlIcon} />
       <p class='weather-temp'>${Math.round(data.main.temp)} deg</p>
-       <p class='weather-city>${data.name}</p>
+       <p class='weather-city'>${data.name}</p>
       `;
     })
     .catch((err) => console.log(err));
@@ -117,5 +117,5 @@ navigator.geolocation.getCurrentPosition((position) => {
 
 document.getElementById("to-do-btn").addEventListener("click", function () {
   //open link in new tab when button is clicked
-  window.open('https://www.monday.com","_blank');
+  window.open("https://www.monday.com", "_blank");
 });
