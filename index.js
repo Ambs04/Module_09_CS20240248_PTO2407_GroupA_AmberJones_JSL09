@@ -110,6 +110,7 @@ navigator.geolocation.getCurrentPosition((position) => {
        <p class='weather-city'>${data.name}</p>
       `;
     })
+    //display error message if promise is rejected
     .catch((err) => console.log(err));
 });
 
