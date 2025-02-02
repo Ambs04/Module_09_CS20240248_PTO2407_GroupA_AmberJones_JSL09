@@ -106,7 +106,7 @@ navigator.geolocation.getCurrentPosition((position) => {
       //print the icon/temp/location to DOM
       document.getElementById("weather").innerHTML = `
       <img src=${urlIcon} />
-      <p class='weather-temp'>${Math.round(data.main.temp)} °</p>
+      <p class='weather-temp'>${Math.round(data.main.temp)}°</p>
        <p class='weather-city'>${data.name}</p>
       `;
     })
