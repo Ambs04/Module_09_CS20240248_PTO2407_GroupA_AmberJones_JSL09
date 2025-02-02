@@ -114,8 +114,9 @@ navigator.geolocation.getCurrentPosition((position) => {
 });
 
 //SECTION 5 - PERSONAL TOUCHES
+//To-do list section
 
 document.getElementById("to-do-btn").addEventListener("click", function () {
-  //open link in new tab when button is clicked
+  //open link in new tab when button is clicked - opens note/schedule website in new tab
   window.open("https://www.monday.com", "_blank");
 });
