@@ -78,6 +78,7 @@ p.weather-temp {
   margin-left: -10px;
 }
 
+/*Lines 82 - 115 = my styling for my to-do section*/
 #container {
   display: flex;
   justify-content: space-between;
